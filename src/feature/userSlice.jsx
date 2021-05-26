@@ -25,7 +25,7 @@ const userSlice = createSlice ({
     }
 });
 
-export const {setSignendIn,setUserData,setInput,setBlogData} = userSlice.actions;
+export const {setSignedIn,setUserData,setInput,setBlogData} = userSlice.actions;
 
 export const selectSignedIn = (state) => state.user.isSignedIn;
 export const selectUserData = (state) => state.user.userData;
