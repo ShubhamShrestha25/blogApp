@@ -13,6 +13,7 @@ const Homepage = () => {
   const isSignedIn = useSelector(selectSignedIn);
 
   const dispatch = useDispatch();
+  
   const login = (response) => {
     console.log(response);
     dispatch(setSignedIn(true));
@@ -30,7 +31,7 @@ const Homepage = () => {
             up and start reading some quality blogs.
           </p>
           <GoogleLogin 
-            clientId="231502641104-7v4n734mt77ollolsv18dudm3g6jmvp9.apps.googleusercontent.com"
+            clientId='231502641104-7v4n734mt77ollolsv18dudm3g6jmvp9.apps.googleusercontent.com'
             render={(renderProps) => (
               <button
                 onClick={renderProps.onClick}
