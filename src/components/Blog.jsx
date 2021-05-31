@@ -31,8 +31,8 @@ const Blogs = () => {
       <h1 className="blog__page__header">Blogs</h1>
       {loading ? <h1 className="loading">Loading...</h1> : ""}
       <div className="blogs">
-        {blogs?.articles?.map((blog) => (
-          <a className="blog" target="_blank" href={blog.url}>
+        {blogs?.articles?.map((blog,key) => (
+          <a className="blog" target="_blank" href={blog.url} value={key}>
             <img src={blog.image} />
             <div>
               <h3 className="sourceName">

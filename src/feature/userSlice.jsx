@@ -10,7 +10,7 @@ const userSlice = createSlice ({
         blogData: null,
     },
     reducers: {
-        setSignendIn: (state, action) => {
+        setSignedIn: (state, action) => {
             state.isSignedIn = action.payload;
         },
         setUserData: (state, action) => {
